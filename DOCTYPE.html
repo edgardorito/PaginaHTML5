@@ -11,25 +11,11 @@
     <title>Pagina con HTML5</title>
   </head>
   <body>
-    <header>Aquí esta el header</header>
-    <nav>
-      <ul>
-        <li>Inicio</li>
-        <li>Contacto</li>
-      </ul>
-    </nav>
-    <section>
-      <hgroup>
-        <h1>Titulo importante de la pagina</h1>
-        <h2>Segundo importante</h2>
-      </hgroup>
-      <hgroup>
-        <h1>HTML5</h1>
-        <h2>hgroup</h2>
-        <h5>lo ultimo</h5>
-      </hgroup>
-      <article class="">Articulo principal</article>
-      <aside class="">Aqui va la informacion extra</aside>
-    </section>
+    <canvas id="miCanvas" width="300" height="400">No soporta HTML5</canvas>
+    <script type="text/javascript">
+      var canvas = document.getElementById('miCanvas');
+      var ctx = canvas.getContext('2d');
+      ctx.fillRect(0,0,20,20);
+    </script>
   </body>
 </html>
